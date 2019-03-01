@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="navigation-back" (click)="goBack()">
+      <ion-icon name="arrow-back"></ion-icon>
+      Back
+    </div>
+    <ion-title>Quotes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let quote of quotes">
+    <ion-card-title>#{{quote.id}}</ion-card-title>
+    <ion-card-content>{{quote.text}}</ion-card-content>
+    <div>{{quote.person.toUpperCase()}}</div>
+    <ion-button (click)='favorite(quote)' 
+                [ngClass]="{'favorite': !quote.favorite, 'unfavorite': quote.favorite}">
+      {{quote.favorite ? 'unfavorite' : 'favorite'}}
+    </ion-button>
+
+  </ion-card>
+
+</ion-content>

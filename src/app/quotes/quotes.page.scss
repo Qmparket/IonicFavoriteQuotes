@@ -1,0 +1,48 @@
+$primary: #fae733;
+.navigation-back {
+    color: $primary;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+    ion-icon {
+        margin: auto 0;
+        font-size: 1.2rem;
+    }
+}
+ion-card {
+    ion-card-title {
+        text-align: center;
+        font-size: 1rem;
+        color: gray;
+        padding-top: 0.5rem;
+    }
+    ion-card-content {
+        padding-bottom: 0.2rem;
+    }
+    div {
+        &:before {
+            content: '- ';
+        }
+        padding: 0 15px;
+        text-align: end;
+    }
+    ion-button {
+        float: right;
+        
+        
+        
+    }
+    .favorite {
+        --background: translucent;
+        --background-activated: translucent;
+        --color-activated: #darken($primary, 50);
+        color: $primary;
+    }
+    .unfavorite {
+        --background: translucent;
+        --background-activated: translucent;
+        --color-activated: #darken(red, 50);
+        color: red;
+    }
+}

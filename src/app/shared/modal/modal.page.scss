@@ -1,0 +1,24 @@
+ion-button {
+    margin: 0 auto;
+    display: table;
+
+}
+ion-card {
+    padding: 0.8rem;
+    div {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    ion-button {
+        --background: transparent;
+        --color: red;
+        --background-activated: red;
+        --border-color: red;
+        --border-style: solid;
+        --border-width: 2px;
+        --color-activated: white;
+        --border-radius: 0px;
+        height: 2rem;
+        
+    }
+}

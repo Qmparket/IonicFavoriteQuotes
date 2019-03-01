@@ -3,17 +3,23 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { TabsPageRoutingModule } from './tabs.router.module';
+import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
+import { QuoteService } from '../shared/services/quote.service';
+import { ModalPage } from '../shared/modal/modal.page';
+import { ModalPageModule } from '../shared/modal/modal.module';
+
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    TabsPageRoutingModule
+    TabsPageRoutingModule,
+    ModalPageModule
   ],
-  declarations: [TabsPage]
+  declarations: [TabsPage],
+  providers: [QuoteService]
 })
 export class TabsPageModule {}

@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{quote.person}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <div>{{quote.text}}</div>
+    <ion-button (click)="unfavorite()">Unfavorite</ion-button>
+  </ion-card>
+<ion-button (click)="dismiss()" color="danger">Close</ion-button>
+</ion-content>

@@ -1,0 +1,19 @@
+ion-item {
+    --inner-padding-end: 1rem;
+    --inner-padding-start: 1rem;
+    --padding-start: 0;
+}
+.quote {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 90%;
+    font-size: 0.9rem;
+}
+.author {
+    font-size: 1.1rem;
+}
+ion-content {
+    --padding-end: 0;
+    --padding-start: 0;
+}

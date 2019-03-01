@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start" style="height: 100%;">
+          <ion-menu-button>
+          </ion-menu-button>
+      </ion-buttons>
+    <ion-title>Quotes Library</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h3 text-center>Select your favorite Quote</h3>
+  <ion-list>
+    <ion-item *ngFor="let quoteGroup of quoteCollection" (click)="openQuotes(quoteGroup.quotes)">
+      <ion-icon [name]="quoteGroup.icon"></ion-icon>
+      <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-row>
+                    <div class="quote-title">{{quoteGroup.category}}</div>
+                </ion-row>
+                <ion-row>
+                    <div class="quote-count">{{quoteGroup.category.length}} Quotes</div>
+                </ion-row>
+              </ion-col>
+              <ion-col align-self-center>
+                <ion-icon name="arrow-forward" class="icon-fowrard"></ion-icon>
+              </ion-col>
+        </ion-row>
+          
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>
