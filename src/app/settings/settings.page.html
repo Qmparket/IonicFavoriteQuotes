@@ -2,12 +2,16 @@
 <ion-content padding>
 <ion-grid>
   <ion-row>
-    <ion-col>
-      <ion-label>Alternative Background</ion-label>
-    </ion-col>
-    <ion-col>
-      <ion-toggle (ionChange)="onToggle($event)"></ion-toggle>
-    </ion-col>
+    <ion-button (click)="changeTheme('autumn')">Autumn</ion-button>
+  </ion-row>
+  <ion-row>
+    <ion-button (click)="changeTheme('night')">Night</ion-button>
+  </ion-row>
+  <ion-row>
+    <ion-button (click)="changeTheme('neon')">Neon</ion-button>
+  </ion-row>
+  <ion-row>
+    <ion-button (click)="changeTheme('default')">Default</ion-button>
   </ion-row>
 </ion-grid>
 </ion-content>
