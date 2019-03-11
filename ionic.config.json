@@ -1,5 +1,7 @@
 {
   "name": "FavoriteQuotes",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
